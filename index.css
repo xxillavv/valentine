@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f0c5e3;
+}
+
+button {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.section__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.valentine__imgage {
+  width: 20%;
+  padding-top: 10%;
+}
+
+.no__button {
+  position: absolute;
+}
+
+.yes__button {
+  margin-left: 150px;
+}
+
+.yes__button.hidden,
+.no__button.hidden {
+  display: none;
+}
+
+.no__button,
+.yes__button {
+  padding: 15px 60px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  background: transparent;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.no__button:hover,
+.yes__button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+.no__button:active,
+.yes__button:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.main__text {
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+
+.main__text.hidden {
+  display: none;
+}
+
+.buttons__box {
+  display: flex;
+}
+
+.hidden__img_first {
+  position: fixed;
+  top: 50%; 
+  left: 25%;
+  transform: translate(-50%, -50%) rotate(-10deg); 
+  z-index: 9999;
+  width: 35vw;   
+  height: auto;
+}
+
+.hidden__img_second {
+  position: fixed;
+  top: 50%; 
+  left: 80%;
+  transform: translate(-50%, -50%) rotate(10deg); 
+  z-index: 9999;
+  width: 40vw;   
+  height: auto;
+}
